@@ -161,7 +161,7 @@ body {
 @media (max-width: 600px) {
     .nav-link {
         width: auto;
-        font-size: 1.1rem;
+        font-size: 3.5vw;
     }
 }
 
@@ -265,9 +265,17 @@ header .background {
     min-height: 25rem;
 }
 
-.box.side > * {
-    flex-basis: 50%;
-    width: 50%;
+@media (max-width: 768px) {
+    .box .image {
+        min-height: 15rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .box.side > * {
+        flex-basis: 50%;
+        width: 50%;
+    }
 }
 /* ---- */
 
@@ -291,7 +299,7 @@ header .background {
     transition: all 0.25s ease;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 768px) {
     .spotlight:hover {
         transform: scale(1.5);
     }
@@ -323,9 +331,7 @@ header .background {
 .logo {
     width: 300px;
     height: 50px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: relative;
     padding-left: 16px;
 	display: flex;
 	flex-direction: row;
@@ -400,7 +406,7 @@ header .background {
 footer {
     background: var(--footer);
     margin-top: var(--space);
-    padding: 0 var(--space);
+    padding: 0 5vw;
 }
 
 footer a {
