@@ -60,7 +60,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2.25rem;
+    font-size: clamp(1.7rem, 8vw, 2.25rem);
     font-weight: 500;
     color: var(--default);
 }
