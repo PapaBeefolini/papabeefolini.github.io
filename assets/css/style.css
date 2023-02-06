@@ -11,6 +11,12 @@
     --space: 4rem;
 }
 
+@media (max-width: 768px) {
+    :root {
+        --space: 2rem;
+    }
+}
+
 html {
     scroll-behavior: smooth;
   }
@@ -33,7 +39,7 @@ p {
 }
 
 h1 {
-    font-size: clamp(2rem, 1.5rem + 6vw, 4rem);
+    font-size: clamp(1.5rem, 8vw, 4rem);
     font-weight: 500;
     color: var(--default);
     position: relative;
@@ -100,8 +106,8 @@ h7 span {
 
 .avatar {
     position: relative;
-    width: 256px;
-    height: 256px;
+    width: clamp(128px, 32vw, 256px);
+    height: clamp(128px, 32vw, 256px);
     overflow: hidden;
     border-radius: 50%;
     border: thick double var(--accent);
@@ -148,7 +154,7 @@ body {
 /* Navbar */
 .nav-link {
     width: 200px;
-    font-size: 1.25rem;
+    font-size: clamp( 0.7rem, 3vw, 1.25rem);
     font-weight: 600;
     white-space: nowrap;
     letter-spacing: 0.225em;
@@ -161,7 +167,6 @@ body {
 @media (max-width: 600px) {
     .nav-link {
         width: auto;
-        font-size: 3.5vw;
     }
 }
 
@@ -368,7 +373,8 @@ header .background {
 .socials svg {
     fill: var(--default);
     height: 32px;
-    width: 32px;
+    height: clamp(24px, 6vw, 32px);
+    width: clamp(24px, 6vw, 32px);
     transition: all 0.25s ease;
 }
 
