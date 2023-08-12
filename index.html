@@ -1,323 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-        <title>Jason Traeder - Portfolio</title>
-        <meta name="og:title" content="Jason Traeder - Portfolio"/>
-        <meta name="author" content="Jason Traeder">
-        <meta name="description" content="I'm a 25 year old programmer with almost a decade of experience in the games industry.
-        With a broad skill set in game development, I have experience programming, 3D modeling, animating, networking, UI creation & more.">
-        <meta name="og:description" content="I'm a 25 year old programmer with almost a decade of experience in the games industry.
-        With a broad skill set in game development, I have experience programming, 3D modeling, animating, networking, UI creation & more."/>
-        <meta name="keywords" content="jason, traeder, programmer, programming, unity, godot, unreal engine, source engine, developer, gameplay programmer, gaming, games, papa, brickolini">
-        <meta name="theme-color" content="#2d313f">
-
-        <link rel="icon" type="image/png" href="assets/img/avatar.png">
-
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    </head>
-
-
-    <body>
-        <img class="background-media" src="./assets/img/walter/5.png">
-        <header>
-            <img class="background" src="./assets/img/grave/4.png">
-            
-            <div class="container pt-3 pb-0">
-                <div class="row align-items-center animate__animated animate__fadeInDown animate__delay-1s">
-                        <a class="nav-link" href="#about">About Me</a>
-                        <a class="nav-link" href="#projects">Projects</a>
-                        <a class="nav-link" href="#gallery">Gallery</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        @import url('./assets/css/style.css');
+        @import url('./glightbox/css/glightbox.min.css');
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+    </style>
+    <script src="./components/nav.js"></script>
+    <script src="./components/footer.js"></script>
+</head>
+<body>
+    <img class="main-background" src="./assets/img/walter/5.png">
+    <nav-component></nav-component>
+    <header>
+        <video autoplay muted loop>
+            <source src="assets/img/background-video.mp4" type="video/mp4">
+        </video>
+        <div class="container animate__animated animate__backInDown">
+            <!--<img src="assets/img/avatar.png"/>-->
+            <h1>Jason <span>Traeder</span></h1>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/jason-traeder/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                </a>
+                <a href="https://twitter.com/PapaBeefolini">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                </a>
+    
+                <a href="https://github.com/PapaBeefolini">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://papabrickolini.itch.io/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M71.92 34.77C50.2 47.67 7.4 96.84 7 109.73v21.34c0 27.06 25.29 50.84 48.25 50.84 27.57 0 50.54-22.85 50.54-50 0 27.12 22.18 50 49.76 50s49-22.85 49-50c0 27.12 23.59 50 51.16 50h.5c27.57 0 51.16-22.85 51.16-50 0 27.12 21.47 50 49 50s49.76-22.85 49.76-50c0 27.12 23 50 50.54 50 23 0 48.25-23.78 48.25-50.84v-21.34c-.4-12.9-43.2-62.07-64.92-75C372.56 32.4 325.76 32 256 32S91.14 33.1 71.92 34.77zm132.32 134.39c-22 38.4-77.9 38.71-99.85.25-13.17 23.14-43.17 32.07-56 27.66-3.87 40.15-13.67 237.13 17.73 269.15 80 18.67 302.08 18.12 379.76 0 31.65-32.27 21.32-232 17.75-269.15-12.92 4.44-42.88-4.6-56-27.66-22 38.52-77.85 38.1-99.85-.24-7.1 12.49-23.05 28.94-51.76 28.94a57.54 57.54 0 0 1-51.75-28.94zm-41.58 53.77c16.47 0 31.09 0 49.22 19.78a436.91 436.91 0 0 1 88.18 0C318.22 223 332.85 223 349.31 223c52.33 0 65.22 77.53 83.87 144.45 17.26 62.15-5.52 63.67-33.95 63.73-42.15-1.57-65.49-32.18-65.49-62.79-39.25 6.43-101.93 8.79-155.55 0 0 30.61-23.34 61.22-65.49 62.79-28.42-.06-51.2-1.58-33.94-63.73 18.67-67 31.56-144.45 83.88-144.45zM256 270.79s-44.38 40.77-52.35 55.21l29-1.17v25.32c0 1.55 21.34.16 23.33.16 11.65.54 23.31 1 23.31-.16v-25.28l29 1.17c-8-14.48-52.35-55.24-52.35-55.24z"/></svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container">
+            <h6>About Me</h6>
+            <h3>I make video games</h3>
+            <p>
+                I'm a 25 year old programmer with almost a decade of experience in the games industry.
+                With a broad skill set in game development, I have experience programming, 3D modeling, animating, networking, UI creation & more.
+            </p>
+        </div>
+    </section>
+    <section id="positions">
+        <div class="container large">
+            <h6 class="center-text">Work experience</h6>
+            <div class="card-row">
+                <div class="card">
+                    <a href="https://www.themirror.space/" draggable="false">
+                        <div class="card-image" style="background-image:url('assets/img/mirror/mars.png')">
+                            <div class="logo">
+                                <div class="logo-image" style="background: url('./assets/img/mirror/icon.png')"></div>
+                            </div>
+                        </div>
+                        <h4>The Mirror</h4>
+                    </a>
+                    <p>The Mirror is an all-in-one game and game development platform, designed to empower developers and 3D creators with limitless experiences & creativity.</p>
+                    <h7><span>Time: </span>2022 - Now<br>
+                    <span>Role: </span>Senior Engineer</h7>
+                </div>
+                <div class="card">
+                    <a href="index.html#gallery" draggable="false">
+                        <div class="card-image" style="background-image:url('assets/img/collage.png')"></div>
+                        <h4>Indie Game Developer</h4>
+                    </a>
+                    <p>I've worked on a diverse array of projects, spanning various platforms, genres, and art styles, which has allowed me to continuously broaden my expertise and capabilities.</p>
+                    <h7><span>Time: </span>2014 - Now<br>
+                    <span>Role: </span>Jack of all Trades</h7>
                 </div>
             </div>
-            
-            <div class="container text-center animate__animated animate__backInDown">
-                <img src="assets/img/avatar.png" class="avatar"/>
-                <h1>Jason <span>Traeder</span></h1>
-
-                <div class="socials">
-                    <a class="mr-2" href="https://www.linkedin.com/in/jason-traeder/">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+        </div>
+    </section>
+    <section class="tools" id="tools">
+        <div class="container row tools">
+            <img src='./assets/img/tools/unity.png'>
+            <img src='./assets/img/tools/unreal.png'>
+            <img src='./assets/img/tools/godot.png'>
+            <img src='./assets/img/tools/source2.png'>
+            <img src='./assets/img/tools/blender.png'>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container large">
+            <h6 class="center-text">Projects</h6>
+            <div class="card-row">
+                <div class="card">
+                    <a href="walters-rebound.html" draggable="false">
+                        <div class="card-image" style="background-image:url('assets/img/walter/8.png')"></div>
+                        <h4>Walter's Rebound <span>(Unity, PC)</span></h4>
                     </a>
-                    <a class="mr-2" href="https://twitter.com/PapaBeefolini">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                    <p>Recreation of Valve's Ricochet with improved mechanics, additional maps, intelligent bots, gameplay modifiers and more.</p>
+                </div>
+                <div class="card">
+                    <a href="racers-remastered.html" draggable="false">
+                        <div class="card-image" style="background-image:url('assets/img/rr/10.png')"></div>
+                        <h4>Racers Remastered <span>(Unity, PC)</span></h4>
                     </a>
-        
-                    <a class="mr-2" href="https://github.com/PapaBeefolini">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                    </a>
-                    <a class="mr-2" href="https://papabrickolini.itch.io/">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M71.92 34.77C50.2 47.67 7.4 96.84 7 109.73v21.34c0 27.06 25.29 50.84 48.25 50.84 27.57 0 50.54-22.85 50.54-50 0 27.12 22.18 50 49.76 50s49-22.85 49-50c0 27.12 23.59 50 51.16 50h.5c27.57 0 51.16-22.85 51.16-50 0 27.12 21.47 50 49 50s49.76-22.85 49.76-50c0 27.12 23 50 50.54 50 23 0 48.25-23.78 48.25-50.84v-21.34c-.4-12.9-43.2-62.07-64.92-75C372.56 32.4 325.76 32 256 32S91.14 33.1 71.92 34.77zm132.32 134.39c-22 38.4-77.9 38.71-99.85.25-13.17 23.14-43.17 32.07-56 27.66-3.87 40.15-13.67 237.13 17.73 269.15 80 18.67 302.08 18.12 379.76 0 31.65-32.27 21.32-232 17.75-269.15-12.92 4.44-42.88-4.6-56-27.66-22 38.52-77.85 38.1-99.85-.24-7.1 12.49-23.05 28.94-51.76 28.94a57.54 57.54 0 0 1-51.75-28.94zm-41.58 53.77c16.47 0 31.09 0 49.22 19.78a436.91 436.91 0 0 1 88.18 0C318.22 223 332.85 223 349.31 223c52.33 0 65.22 77.53 83.87 144.45 17.26 62.15-5.52 63.67-33.95 63.73-42.15-1.57-65.49-32.18-65.49-62.79-39.25 6.43-101.93 8.79-155.55 0 0 30.61-23.34 61.22-65.49 62.79-28.42-.06-51.2-1.58-33.94-63.73 18.67-67 31.56-144.45 83.88-144.45zM256 270.79s-44.38 40.77-52.35 55.21l29-1.17v25.32c0 1.55 21.34.16 23.33.16 11.65.54 23.31 1 23.31-.16v-25.28l29 1.17c-8-14.48-52.35-55.24-52.35-55.24z"/></svg>
-                    </a>
+                    <p>Total recreation of LEGO Racers that was to feature new tracks, power-ups, racing mechanics, multiplayer and more.</p>
                 </div>
             </div>
-        </header>
-
-
-        <section class="about" id="about">
-            <div class="container hidden right">
-                <div class="row main align-items-center">
-                    <div class="col-md-10">
-                        <h6 class="mb-2"><span>About Me</span></h6>
-                        <h3>I make video games</h3>
-                        <p class="mt-4">
-                            I'm a 25 year old programmer with almost a decade of experience in the games industry.
-                            With a broad skill set in game development, I have experience programming, 3D modeling, animating, networking, UI creation & more.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="section" id="positions">
-            <div class="container tag">
-                <div class="row hidden">
-                    <h6 class="mb-2"><span>Experience</span></h6>
-                </div>
-                <div class="row">
-                    <div class="col-xl-12 px-2 py-2 hidden">
-                        <a href="https://www.themirror.space/" draggable="false">
-                            <div class="card box side">
-                                <div class="image d-flex align-content-end flex-wrap" style="background: url('./assets/img/mirror/mars.png')">
-                                    <div class="logo">
-                                        <div class="logo-image" style="background: url('./assets/img/mirror/icon.png')"></div>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <h4>The Mirror</h4>
-                                    <p class="mb-2">The Mirror is an all-in-one game and game development platform, designed to empower developers and 3D creators with limitless experiences & creativity.</p>
-                                    <h7><span><br>Time: </span>2022 - Now</h7>
-                                    <h7><span>Role: </span>Senior Engineer</h7>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xl-12 px-2 py-2 hidden">
-                        <div class="card box side">
-                            <div class="image" style="background: url('./assets/img/collage.png')"></div>
-                            <div class="card-body">
-                                <h4>Indie Game Developer</h4>
-                                <p class="mb-2">Wide range of projects, spanning multiple platforms & genres.</p>
-                                <h7><span><br>Time: </span>2014 - Now</h7>
-                                <h7><span>Role: </span>Jack of all Trades</h7>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="section" id="projects">
-            <div class="container">
-                <div class="row hidden">
-                    <h6 class="mb-2"><span>Projects</span></h6>
-                </div>
-                <div class="row">
-                    <div class="col-xl-12 px-2 py-2 hidden">
-                        <div class="card box">
-                            <div class="image large" style="background: url('./assets/img/walter/8.png')"></div>                          
-                            <div class="card-body">
-                                <h4>Walter's Rebound <span>(Unity, PC)</span></h4>
-                                <p>Recreation of Valve's Ricochet with improved mechanics, additional maps, intelligent bots, gameplay modifiers and more.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 px-2 py-2 hidden">
-                        <div class="card box">
-                            <div class="image" style="background: url('./assets/img/grave/1.png')"></div>
-                            <div class="card-body">
-                                <h4>Grave Quest <span>(Unity, PC)</span></h4>
-                                <p>Kart based arena survival game, developed in 72 hours for Halloween 2020.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 px-2 py-2 hidden">
-                        <div class="card box">
-                            <div class="image" style="background: url('./assets/img/jumpy/video-1.gif')"></div>
-                            <div class="card-body">
-                                <h4>Jumpy<span> (s&box, PC)</span></h4>
-                                <p>Multiplayer Frogger clone utilizing the s&box engine (C#) based on Source 2.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-12 px-2 py-2 hidden">
-                        <div class="card box">
-                            <div class="image large" style="background: url('./assets/img/rr/10.png')"></div>
-                            <div class="card-body">
-                                <h4>Racers Remastered <span>(Unity, PC)</span></h4>
-                                <p>Total recreation of Lego Racers that was to feature new tracks, power-ups, racing mechanics, multiplayer and more.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 px-2 py-2 hidden">
-                        <div class="card box">
-                            <div class="image" style="background: url('./assets/img/zibulon2/video-1.gif')"></div>
-                            <div class="card-body">
-                                <h4>Zibulon 2 <span>(Unity, PC)</span></h4>
-                                <p>Multiplayer coop 2D side-scrolling wave-based alien shooter.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 px-2 py-2 hidden">
-                        <div class="card box">
-                            <div class="image" style="background: url('./assets/img/ws/4.png')"></div>
-                            <div class="card-body">
-                                <h4>Washed Ashore <span>(Unity, PC)</span></h4>
-                                <p>Randomly generated island survival FPS centered around crafting and base-building.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 px-2 py-2 hidden">
-                        <div class="card box">
-                            <div class="image" style="background: url('./assets/img/jumper/1.png')"></div>
-                            <div class="card-body">
-                                <h4>Planet Jumper <span>(Unity, PC, Mobile)</span></h4>
-                                <p>2D fast-paced side-scrolling movement platformer.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        
-        <section class="section" id="gallery">
-            <div class="container">
-                <div class="row hidden">
-                    <h6 class="mb-2"><span>Gallery & Prototypes</span></h6>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 px-2 py-2 hidden">
-                        <div class="card box spotlight">
-                            <div class="image" style="background: url('./assets/img/frost/2.png')"></div>
-                            <div class="content">Frost</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 px-2 py-2 hidden">
-                        <div class="card box spotlight">
-                            <div class="image" style="background: url('./assets/img/dungeon/3.gif')"></div>
-                            <div class="content">Dungeon Crawl</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 px-2 py-2 hidden">
-                        <div class="card box spotlight">
-                            <div class="image" style="background: url('./assets/img/deathmatch/2.png')"></div>
-                            <div class="content">Untitled Deathmatch</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 px-2 py-2 hidden">
-                        <div class="card box spotlight">
-                            <div class="image" style="background: url('./assets/img/harvest/1.png')"></div>
-                            <div class="content">Harvest</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 px-2 py-2 hidden">
-                        <div class="card box spotlight">
-                            <div class="image" style="background: url('./assets/img/ogel/2.png')"></div>
-                            <div class="content">Ogel Island</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 px-2 py-2 hidden">
-                        <div class="card box spotlight">
-                            <div class="image" style="background: url('./assets/img/rr/5.png')"></div>
-                            <div class="content">Racer's Remastered</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 px-2 py-2 hidden">
-                        <div class="card box spotlight">
-                            <div class="image" style="background: url('./assets/img/rr/8.png')"></div>
-                            <div class="content">Racer's Remastered</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 px-2 py-2 hidden">
-                        <div class="card box spotlight">
-                            <div class="image" style="background: url('./assets/img/laststand/1.png')"></div>
-                            <div class="content">Last Stand</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 px-2 py-2 hidden">
-                        <div class="card box spotlight">
-                            <div class="image" style="background: url('./assets/img/noodle/2.gif')"></div>
-                            <div class="content">Noodle Simulator</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 px-2 py-2 hidden">
-                        <div class="card box spotlight">
-                            <div class="image" style="background: url('./assets/img/grave/2.png')"></div>
-                            <div class="content">Grave Quest</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 px-2 py-2 hidden">
-                        <div class="card box spotlight">
-                            <div class="image" style="background: url('./assets/img/pig/2.png')"></div>
-                            <div class="content">Pig Bomber</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 px-2 py-2 hidden">
-                        <div class="card box spotlight">
-                            <div class="image" style="background: url('./assets/img/ogel/8.png')"></div>
-                            <div class="content">Ogel Island</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <footer class="py-3">
-            <div class="container px-0">
-                <div class="d-flex align-items-center">
-                    <div class="flex-grow-1">
-                        <h7>Jason Traeder</h7>
-                    </div>
-                    <a class="mr-2" href="https://www.linkedin.com/in/jason-traeder/">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+            <div class="card-row">
+                <div class="card">
+                    <a href="grave-quest.html" draggable="false">
+                        <div class="card-image" style="background-image:url('assets/img/grave/5.gif')"></div>
+                        <h4>Grave Quest <span>(Unity, s&box, PC)</span></h4>
                     </a>
-                    <a class="mr-2" href="https://twitter.com/PapaBeefolini">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                    <p>Kart based arena survival game, developed in 72 hours for Halloween 2020. Originally created in Unity, then later ported to s&box (Source 2) and improved.</p>
+                </div>
+                <div class="card">
+                    <a href="washed-ashore.html" draggable="false">
+                        <div class="card-image" style="background-image:url('assets/img/ws/4.png')"></div>
+                        <h4>Washed Ashore <span>(Unity, PC)</span></h4>
                     </a>
-                    <a class="mr-2" href="https://github.com/PapaBeefolini">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <p>Randomly generated island survival FPS centered around crafting and base-building.</p>
+                </div>
+            </div>
+            <div class="card-row">
+                <div class="card">
+                    <a href="zibulon-2.html" draggable="false">
+                        <div class="card-image" style="background-image:url('assets/img/zibulon2/video-1.gif')"></div>
+                        <h4>Zibulon 2 <span>(Unity, PC)</span></h4>
                     </a>
-                    <a href="https://papabrickolini.itch.io/">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M71.92 34.77C50.2 47.67 7.4 96.84 7 109.73v21.34c0 27.06 25.29 50.84 48.25 50.84 27.57 0 50.54-22.85 50.54-50 0 27.12 22.18 50 49.76 50s49-22.85 49-50c0 27.12 23.59 50 51.16 50h.5c27.57 0 51.16-22.85 51.16-50 0 27.12 21.47 50 49 50s49.76-22.85 49.76-50c0 27.12 23 50 50.54 50 23 0 48.25-23.78 48.25-50.84v-21.34c-.4-12.9-43.2-62.07-64.92-75C372.56 32.4 325.76 32 256 32S91.14 33.1 71.92 34.77zm132.32 134.39c-22 38.4-77.9 38.71-99.85.25-13.17 23.14-43.17 32.07-56 27.66-3.87 40.15-13.67 237.13 17.73 269.15 80 18.67 302.08 18.12 379.76 0 31.65-32.27 21.32-232 17.75-269.15-12.92 4.44-42.88-4.6-56-27.66-22 38.52-77.85 38.1-99.85-.24-7.1 12.49-23.05 28.94-51.76 28.94a57.54 57.54 0 0 1-51.75-28.94zm-41.58 53.77c16.47 0 31.09 0 49.22 19.78a436.91 436.91 0 0 1 88.18 0C318.22 223 332.85 223 349.31 223c52.33 0 65.22 77.53 83.87 144.45 17.26 62.15-5.52 63.67-33.95 63.73-42.15-1.57-65.49-32.18-65.49-62.79-39.25 6.43-101.93 8.79-155.55 0 0 30.61-23.34 61.22-65.49 62.79-28.42-.06-51.2-1.58-33.94-63.73 18.67-67 31.56-144.45 83.88-144.45zM256 270.79s-44.38 40.77-52.35 55.21l29-1.17v25.32c0 1.55 21.34.16 23.33.16 11.65.54 23.31 1 23.31-.16v-25.28l29 1.17c-8-14.48-52.35-55.24-52.35-55.24z"/></svg>
+                    <p>Multiplayer coop 2D side-scrolling wave-based alien shooter. With lots of asteroids.</p>
+                </div>
+                <div class="card">
+                    <a href="ogel-island.html" draggable="false">
+                        <div class="card-image" style="background-image:url('assets/img/ogel/1.png')"></div>
+                        <h4>Ogel Island <span>(Unity, PC)</span></h4>
+                    </a>
+                    <p>Multiplayer island sandbox. Drive around in cars, ride jet skis & bikes, fly helicoptors, deliver pizza & more.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image" style="background-image:url('assets/img/jumpy/video-1.gif')">
+                        <a href="assets/img/jumpy/video-1.gif" class="glightbox" data-gallery="gallery"></a>
+                    </div>
+                    <h4>Jumpy<span> (s&box, PC)</span></h4>
+                    <p>Multiplayer Frogger clone utilizing the s&box engine (C#) based on Source 2.</p>
+                </div>
+            </div>
+            <div class="card-row">
+                <div class="card">
+                    <a href="planet-jumper.html" draggable="false">
+                        <div class="card-image" style="background-image:url('assets/img/jumper/1.png')"></div>
+                        <h4>Planet Jumper <span>(Unity, PC, Mobile)</span></h4>
+                    </a>
+                    <p>2D fast-paced side-scrolling movement platformer.</p>
+                </div>
+                <div class="card">
+                    <a href="frost.html" draggable="false">
+                        <div class="card-image" style="background-image:url('assets/img/frost/2.png')"></div>
+                        <h4>Frost <span>(Unity, PC)</span></h4>
+                    </a>
+                    <p>Players try to survive in a tundra environment. Dead players come back as annoying crows.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image" style="background-image:url('assets/img/harvest/2.png')">
+                        <a href="assets/img/harvest/2.png" class="glightbox" data-gallery="gallery"></a>
+                    </div>
+                    <h4>Harvest<span> (Unity, PC)</span></h4>
+                    <p>Work together to build up a successful farm and defend it from nightly monsters that want your crops.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="container large">
+            <h6 class="center-text">Gallery</h6>
+            <div class="card-grid">
+                <div class="card-image">
+                    <a href="./assets/img/rr/2.mp4" class="glightbox" data-gallery="gallery">
+                        <video autoplay muted loop><source src="./assets/img/rr/2.mp4" type="video/mp4"></video>
+                    </a>
+                </div>
+                <div class="card-image">
+                    <a href="./assets/img/rr/1.mp4" class="glightbox" data-gallery="gallery">
+                        <video autoplay muted loop><source src="./assets/img/rr/1.mp4" type="video/mp4"></video>
+                    </a>
+                </div>
+                <div class="card-image card-tall">
+                    <a href="./assets/img/ogel/5.mp4" class="glightbox" data-gallery="gallery">
+                        <video autoplay muted loop><source src="./assets/img/ogel/5.mp4" type="video/mp4"></video>
+                    </a>
+                </div>
+                <div class="card-image" style="background-image:url('assets/img/rr/11.png')">
+                    <a href="assets/img/rr/11.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image card-wide" style="background-image:url('assets/img/rr/8.png')">
+                    <a href="assets/img/rr/8.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image" style="background-image:url('assets/img/rr/5.png')">
+                    <a href="assets/img/rr/5.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image card-tall card-wide" style="background-image:url('assets/img/grave/3.png')">
+                    <a href="assets/img/grave/3.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image">
+                    <a href="./assets/img/dungeon/1.mp4" class="glightbox" data-gallery="gallery">
+                        <video autoplay muted loop><source src="./assets/img/dungeon/1.mp4" type="video/mp4"></video>
+                    </a>
+                </div>
+                <div class="card-image card-tall" style="background-image:url('assets/img/misc/mech_2.png')">
+                    <a href="assets/img/misc/mech_2.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image">
+                    <a href="./assets/img/deathmatch/2.mp4" class="glightbox" data-gallery="gallery">
+                        <video autoplay muted loop><source src="./assets/img/deathmatch/2.mp4" type="video/mp4"></video>
+                    </a>
+                </div>
+                <div class="card-image card-tall">
+                    <a href="./assets/img/frost/1.mp4" class="glightbox" data-gallery="gallery">
+                        <video autoplay muted loop><source src="./assets/img/frost/1.mp4" type="video/mp4"></video>
+                    </a>
+                </div>
+                <div class="card-image" style="background-image:url('assets/img/walter/6.png')">
+                    <a href="assets/img/walter/6.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image" style="background-image:url('assets/img/pig/2.png')">
+                    <a href="assets/img/pig/2.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image" style="background-image:url('assets/img/harvest/1.png')">
+                    <a href="assets/img/harvest/1.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image">
+                    <a href="./assets/img/laststand/1.mp4" class="glightbox" data-gallery="gallery">
+                        <video autoplay muted loop><source src="./assets/img/laststand/1.mp4" type="video/mp4"></video>
+                    </a>
+                </div>
+                <div class="card-image">
+                    <a href="./assets/img/tps/1.mp4" class="glightbox" data-gallery="gallery">
+                        <video autoplay muted loop><source src="./assets/img/tps/1.mp4" type="video/mp4"></video>
+                    </a>
+                </div>
+                <div class="card-image card-tall">
+                    <a href="./assets/img/noodle/1.mp4" class="glightbox" data-gallery="gallery">
+                        <video autoplay muted loop><source src="./assets/img/noodle/1.mp4" type="video/mp4"></video>
+                    </a>
+                </div>
+                <div class="card-image" style="background-image:url('assets/img/jumper/3.png')">
+                    <a href="assets/img/jumper/3.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image">
+                    <a href="./assets/img/misc/3.mp4" class="glightbox" data-gallery="gallery">
+                        <video autoplay muted loop><source src="./assets/img/misc/3.mp4" type="video/mp4"></video>
+                    </a>
+                </div>
+                <div class="card-image">
+                    <a href="./assets/img/misc/1.mp4" class="glightbox" data-gallery="gallery">
+                        <video autoplay muted loop><source src="./assets/img/misc/1.mp4" type="video/mp4"></video>
                     </a>
                 </div>
             </div>
-        </footer>
-
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script>
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    const intersecting = entry.isIntersecting
-                    const isBelow = entry.boundingClientRect.y > entry.rootBounds.y;
-                    if (intersecting) {
-                        entry.target.classList.add('visible')
-                    }
-                    else {
-                        if (isBelow) {
-                            entry.target.classList.remove('visible')
-                        }
-                    }
-                })
-            })
-            const hiddenElements = document.querySelectorAll('.hidden');
-            hiddenElements.forEach((el) => observer.observe(el));
-        </script>
-    </body>
+        </div>
+    </section>
+    <footer-component></footer-component>
+    <script src="./glightbox/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
+        });
+    </script>
+</body>
 </html>

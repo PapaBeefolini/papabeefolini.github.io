@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        @import url('./assets/css/style.css');
+        @import url('./glightbox/css/glightbox.min.css');
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+    </style>
+    <script src="./components/nav.js"></script>
+    <script src="./components/footer.js"></script>
+</head>
+<body>
+    <img class="main-background" src="./assets/img/frost/1.png" style="filter: hue-rotate(10deg) blur(1rem) grayscale(15%);">
+    <nav-component></nav-component>
+    <section>
+        <div class="container large">
+            <img class="small-logo" src="./assets/img/frost/logo.png">
+            <h5>Frost <span>(Unity, PC)</span></h5>
+            <p class="extra-bottom-padding-text">Players face off in a randomly generated frozen tundra, crafting weapons and gear from scattered resources across the map. The aim is to be the last man standing. When human players are killed, they return as animals like crows and wolves, shaking up the game for the survivors.</p>
+            <div class="card-grid">
+                <div class="card-image card-wide card-tall">
+                    <a href="./assets/img/frost/1.mp4" class="glightbox" data-gallery="gallery">
+                        <video autoplay muted loop><source src="./assets/img/frost/1.mp4" type="video/mp4"></video>
+                    </a>
+                </div>
+                <div class="card-image card-wide card-tall">
+                    <a href="./assets/img/frost/2.mp4" class="glightbox" data-gallery="gallery">
+                        <video autoplay muted loop><source src="./assets/img/frost/2.mp4" type="video/mp4"></video>
+                    </a>
+                </div>
+                <div class="card-image card-wide" style="background-image:url('assets/img/frost/2.png')">
+                    <a href="assets/img/frost/2.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image" style="background-image:url('assets/img/frost/1.png')">
+                    <a href="assets/img/frost/1.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image" style="background-image:url('assets/img/frost/4.png')">
+                    <a href="assets/img/frost/4.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image" style="background-image:url('assets/img/frost/3.png')">
+                    <a href="assets/img/frost/3.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image" style="background-image:url('https://media.sketchfab.com/models/627328b138b74c728fc7c6662ff8e545/thumbnails/572df765d8aa4237be1958e9b30531db/448.jpeg')">
+                    <a href="https://sketchfab.com/models/627328b138b74c728fc7c6662ff8e545/embed?autospin=1" class="glightbox" data-gallery="gallery">
+                        <img src="https://static.sketchfab.com/img/press/logos/sketchfab-logo.svg"/>
+                    </a>
+                </div>
+                <div class="card-image" style="background-image:url('https://media.sketchfab.com/models/7cef825a070e4a2db954cd41c37147e2/thumbnails/2bafb512d1ce49079dc36d47c03f3c9d/640.jpeg')">
+                    <a href="https://sketchfab.com/models/7cef825a070e4a2db954cd41c37147e2/embed?autospin=1" class="glightbox" data-gallery="gallery">
+                        <img src="https://static.sketchfab.com/img/press/logos/sketchfab-logo.svg"/>
+                    </a>
+                </div>
+                <div class="card-image" style="background-image:url('https://media.sketchfab.com/models/02b33f70dd1b4d7c966bfa186f76eba8/thumbnails/4a079e8b1c4a4eabb07bbd3936398096/640.jpeg')">
+                    <a href="https://sketchfab.com/models/02b33f70dd1b4d7c966bfa186f76eba8/embed?autospin=1" class="glightbox" data-gallery="gallery">
+                        <img src="https://static.sketchfab.com/img/press/logos/sketchfab-logo.svg"/>
+                    </a>
+                </div>
+                <div class="card-image" style="background-image:url('assets/img/frost/6.png')">
+                    <a href="assets/img/frost/6.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image" style="background-image:url('assets/img/frost/7.png')">
+                    <a href="assets/img/frost/7.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image card-tall" style="background-image:url('assets/img/frost/8.png')">
+                    <a href="assets/img/frost/8.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image card-tall" style="background-image:url('assets/img/frost/9.png')">
+                    <a href="assets/img/frost/9.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image card-wide" style="background-image:url('assets/img/frost/5.png')">
+                    <a href="assets/img/frost/5.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer-component></footer-component>
+    <script src="./glightbox/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
+        });
+    </script>
+</body>
+</html>

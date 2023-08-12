@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        @import url('./assets/css/style.css');
+        @import url('./glightbox/css/glightbox.min.css');
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+    </style>
+    <script src="./components/nav.js"></script>
+    <script src="./components/footer.js"></script>
+</head>
+<body>
+    <img class="main-background" src="./assets/img/ws/1.png" style="filter: hue-rotate(10deg) blur(1rem) grayscale(15%);">
+    <nav-component></nav-component>
+    <section>
+        <div class="container large">
+            <h5>Washed Ashore <span>(Unity, PC)</span></h5>
+            <p class="extra-bottom-padding-text">Randomly generated island survival FPS centered around crafting and base-building.</p>
+            <div class="card-grid">
+                <div class="card-image card-wide card-tall">
+                    <a href="./assets/img/ws/1.mp4" class="glightbox" data-gallery="gallery">
+                        <video autoplay muted loop><source src="./assets/img/ws/1.mp4" type="video/mp4"></video>
+                    </a>
+                </div>
+                <div class="card-image card-wide card-tall">
+                    <a href="./assets/img/ws/2.mp4" class="glightbox" data-gallery="gallery">
+                        <video autoplay muted loop><source src="./assets/img/ws/2.mp4" type="video/mp4"></video>
+                    </a>
+                </div>
+                <div class="card-image" style="background-image:url('assets/img/ws/1.png')">
+                    <a href="assets/img/ws/1.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image" style="background-image:url('assets/img/ws/2.png')">
+                    <a href="assets/img/ws/2.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image" style="background-image:url('assets/img/ws/3.png')">
+                    <a href="assets/img/ws/3.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image" style="background-image:url('assets/img/ws/4.png')">
+                    <a href="assets/img/ws/4.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image" style="background-image:url('assets/img/ws/5.png')">
+                    <a href="assets/img/ws/5.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image" style="background-image:url('assets/img/ws/6.png')">
+                    <a href="assets/img/ws/6.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image" style="background-image:url('assets/img/ws/7.png')">
+                    <a href="assets/img/ws/7.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+                <div class="card-image" style="background-image:url('assets/img/ws/8.png')">
+                    <a href="assets/img/ws/8.png" class="glightbox" data-gallery="gallery"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer-component></footer-component>
+    <script src="./glightbox/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
+        });
+    </script>
+</body>
+</html>
