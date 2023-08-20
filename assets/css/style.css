@@ -45,6 +45,15 @@ p {
     margin: 0;
 }
 
+p > a {
+    color: var(--default);
+    transition: all 0.2s ease;
+}
+
+p > a:hover {
+    color: var(--accent);
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -155,6 +164,10 @@ section .container {
 
 section .container.large {
     max-width: 1400px;
+}
+
+section .container > object {
+    height: clamp(96px, 80vw, 800px);
 }
 
 section img.big {
@@ -446,12 +459,7 @@ header video {
     -webkit-background-size: contain !important;
     -moz-background-size: contain !important;
     -o-background-size: contain !important;
-    transition: all 0.1s;
     filter: drop-shadow(1rem 0.5rem 1rem rgba(0, 0, 0, 0.5));
-}
-
-.tools img:hover {
-    transform: scale(1.05);
 }
 /* ---- */
 
