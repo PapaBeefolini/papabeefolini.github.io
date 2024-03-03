@@ -440,6 +440,10 @@ header video {
     top: 5px;
     transition: all 0.2s ease;
 }
+
+.row .platform {
+    padding-left: 4px;
+}
 /* ---- */
 
 /* Tools */
@@ -452,8 +456,8 @@ header video {
 }
 
 .tools img {
-    height: clamp(2rem, 18vw, 12rem);
-    width: clamp(2rem, 18vw, 12rem);
+    height: clamp(2rem, 16vw, 12rem);
+    width: clamp(2rem, 16vw, 12rem);
     background-repeat: no-repeat !important;
     background-size: contain;
     -webkit-background-size: contain !important;
