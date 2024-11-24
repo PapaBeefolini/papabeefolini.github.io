@@ -251,14 +251,16 @@ header {
 }
 
 header .container {
+    min-height: 300px;
+    align-content: center;
     text-align: center;
-    padding: 5.5vmax 0 4.5vmax 0;
+    padding: 5vmax 0 4vmax 0;
 }
 
 header img {
     position: relative;
-    width: clamp(96px, 50%, 64px);
-    height: clamp(96px, 50%, 64px);
+    width: clamp(64px, 10%, 96px);
+    height: clamp(64px, 10%, 96px);
     overflow: hidden;
     border-radius: 50%;
     border: thick double var(--accent);
