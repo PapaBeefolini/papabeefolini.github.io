@@ -213,7 +213,7 @@ section img.big {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
 
     &.center {
